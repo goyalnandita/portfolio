@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fae8ff, #ffe4e6);
+  color: #1f2937;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* BLOBS */
+.blob {
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.6;
+  z-index: -1;
+  animation: float 18s infinite ease-in-out;
+}
+
+.blob-1 {
+  background: #818cf8;
+  top: -120px;
+  left: -120px;
+}
+
+.blob-2 {
+  background: #f472b6;
+  bottom: -120px;
+  right: -120px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(40px); }
+  100% { transform: translateY(0); }
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 120px 14%;
+}
+
+.hero h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 4.2rem;
+  line-height: 1.05;
+}
+
+.hero h1 span {
+  color: #4f46e5;
+}
+
+.hero p {
+  max-width: 560px;
+  margin: 28px 0 40px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.hero-links {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-links a {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+/* SECTIONS */
+.section {
+  padding: 120px 14%;
+}
+
+h2 {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 760px;
+  margin-bottom: 22px;
+}
+
+/* SKILLS */
+.skill-group {
+  margin-bottom: 40px;
+}
+
+.skill-group h4 {
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: #374151;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skill-pills span {
+  background: rgba(255,255,255,0.7);
+  padding: 12px 22px;
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+  font-size: 0.9rem;
+}
+
+/* PROJECTS */
+.project-card {
+  max-width: 780px;
+  margin-bottom: 50px;
+  padding: 32px;
+  border-radius: 26px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(14px);
+}
+
+.project-card p {
+  margin-bottom: 12px;
+}
+
+.tags span {
+  background: rgba(79,70,229,0.15);
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-right: 8px;
+}
+
+/* CERTIFICATES */
+.cert-card {
+  max-width: 760px;
+  margin-bottom: 30px;
+}
+
+.cert-card a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact p {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+}
