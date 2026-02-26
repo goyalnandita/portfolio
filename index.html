@@ -3,181 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <title>Nandita Goyal | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Decorative blobs -->
-<div class="blob blob-1"></div>
-<div class="blob blob-2"></div>
+<header>
+  <nav>
+    <h3>Nandita.</h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>
-    I build <span>systems</span><br>
-    using software<br>
-    and hardware.
-  </h1>
-
+  <h1>I build <span class="typing"></span></h1>
   <p>
-    Electronics & Communication Engineering student interested in
-    software development and embedded systems, focused on building
-    real, reliable solutions.
+    Third-year Electronics & Communication Engineering student with interests
+    in software development and embedded systems, focused on building
+    practical and real-world solutions.
   </p>
-
-  <div class="hero-links">
-    <a href="#projects">Projects ↓</a>
-    <a href="resume.pdf" download>Resume</a>
-  </div>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
 </section>
 
 <!-- ABOUT -->
-<section class="section about">
-  <h2>About</h2>
+<section id="about" class="section">
+  <div class="about-wrapper">
 
-  <p>
-    I’m Nandita, a third-year Electronics & Communication Engineering student at
-    Lovely Professional University. My interests lie at the intersection of
-    software development and embedded systems.
-  </p>
+    <!-- LEFT TEXT -->
+    <div class="about-text">
+      <h2>About Me</h2>
 
-  <p>
-    I enjoy writing clean, logical code as well as working close to hardware,
-    which helps me understand how systems function end-to-end. This dual
-    interest allows me to approach problems with both a software and
-    system-level perspective.
-  </p>
+      <p>
+        I am a third-year Electronics and Communication Engineering student at
+        Lovely Professional University with a strong interest in both software
+        development and embedded systems.
+      </p>
 
-  <p>
-    Through academic projects and an embedded systems internship, I’ve worked
-    with microcontrollers like Arduino and ESP32 while strengthening my
-    foundation in programming, data structures, and problem-solving.
-  </p>
+      <p>
+        I enjoy solving problems through programming and also working with
+        hardware-based systems to understand how software interacts with
+        real-world devices. This dual interest helps me think from a
+        system-level perspective.
+      </p>
+
+      <p>
+        Through academic coursework, laboratory work, industry exposure, and
+        hands-on training programs, I have gained experience with
+        microcontrollers, embedded programming, sensors, and core computer
+        science concepts such as data structures and object-oriented
+        programming.
+      </p>
+
+      <p>
+        I am actively looking for opportunities where I can apply my skills,
+        continue learning, and grow as an engineer in software or embedded
+        roles.
+      </p>
+    </div>
+
+    <!-- RIGHT PHOTO -->
+    <div class="about-image">
+      <img src="profile.jpg" alt="Nandita Goyal">
+    </div>
+
+  </div>
 </section>
-
 <!-- SKILLS -->
-<section class="section skills">
+<section id="skills" class="section fade">
   <h2>Skills</h2>
 
-  <div class="skill-group">
-    <h4>Programming & CS Fundamentals</h4>
-    <div class="skill-pills">
-      <span>C</span>
-      <span>C++</span>
-      <span>Python</span>
-      <span>Java</span>
-      <span>Data Structures & Algorithms</span>
-      <span>OOP</span>
+  <div class="skills-grid">
+    <div>
+      <h4>Programming & CS</h4>
+      <span>C</span><span>C++</span><span>Python</span><span>Java</span>
+      <span>Data Structures</span><span>OOP</span>
+    </div>
+
+    <div>
+      <h4>Embedded & IoT</h4>
+      <span>Embedded Systems</span><span>IoT</span>
+      <span>Arduino</span><span>ESP32</span><span>8051</span>
+    </div>
+
+    <div>
+      <h4>Tools</h4>
+      <span>MATLAB</span><span>Keil</span><span>Proteus</span><span>PSpice</span>
     </div>
   </div>
+</section>
 
-  <div class="skill-group">
-    <h4>Embedded & IoT</h4>
-    <div class="skill-pills">
-      <span>Embedded Systems</span>
-      <span>IoT</span>
-      <span>Arduino</span>
-      <span>ESP32</span>
-      <span>8051</span>
-    </div>
+<!-- EXPERIENCE -->
+<section id="experience" class="section fade">
+  <h2>Experience</h2>
+
+  <div class="experience-card">
+    <h3>Embedded Systems Intern</h3>
+    <p class="org">Varisis Advanced Engineering Pvt. Ltd.</p>
+    <p class="duration">Summer Internship</p>
+    <p>
+      Worked on a Perimeter Intrusion Detection System (PIDS) using Arduino
+      Nano 33 BLE Sense, focusing on sensor-based intrusion detection.
+    </p>
+    <p>
+      Collected and processed sensor data and explored edge-based intelligence
+      using Edge Impulse to understand basic machine learning workflows on
+      embedded devices.
+    </p>
+    <p>
+      This internship strengthened my understanding of embedded systems,
+      real-time data handling, and hardware–software integration in
+      industrial environments.
+    </p>
   </div>
 
-  <div class="skill-group">
-    <h4>Tools & Simulation</h4>
-    <div class="skill-pills">
-      <span>MATLAB</span>
-      <span>Keil</span>
-      <span>Proteus</span>
-      <span>PSpice</span>
-    </div>
+  <div class="experience-card">
+    <h3>Women in Engineering Workshop</h3>
+    <p class="org">Padmini VNA Mechatronics, Gurugram</p>
+    <p class="duration">2-Day Technical Workshop</p>
+    <p>
+      Attended a hands-on Women in Engineering workshop focused on industrial
+      exposure, mechatronics systems, and embedded applications.
+    </p>
+    <p>
+      Gained insights into real-world engineering practices, interdisciplinary
+      system design, and the importance of industry-ready technical skills.
+    </p>
+    <p>
+      Interacted with industry professionals, improving my understanding of
+      teamwork, professional communication, and applied engineering
+      problem-solving.
+    </p>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section projects">
-  <h2>Selected Projects</h2>
+<section id="projects" class="section fade">
+  <h2>Projects</h2>
 
   <div class="project-card">
     <h3>Patient Monitoring System (IoT)</h3>
     <p>
-      An IoT-based system designed to collect and transmit patient health
-      parameters for remote monitoring.
+      Developed an IoT-based patient monitoring system using ESP32 to measure
+      SpO₂ and heart rate and transmit data wirelessly for remote monitoring.
     </p>
-    <p>
-      Built using ESP32, the system monitors SpO₂ and heart rate and transmits
-      data wirelessly. This project helped me understand sensor integration,
-      data handling, and real-time system behavior.
-    </p>
-    <div class="tags">
-      <span>ESP32</span>
-      <span>IoT</span>
-      <span>Embedded C</span>
-    </div>
   </div>
 
   <div class="project-card">
     <h3>Smart Electrical Safety Cut-Off System</h3>
     <p>
-      A safety-focused embedded system that automatically disconnects power
-      during unsafe operating conditions.
+      Built an embedded safety system that automatically disconnects power
+      during unsafe electrical conditions to prevent hazards.
     </p>
-    <p>
-      The project strengthened my understanding of control logic,
-      decision-making based on sensor input, and safety-oriented system design.
-    </p>
-    <div class="tags">
-      <span>ESP32</span>
-      <span>Embedded Systems</span>
-      <span>Control Logic</span>
-    </div>
   </div>
 
   <div class="project-card">
     <h3>Gesture Controlled Car</h3>
     <p>
-      A system that translates hand gestures into movement commands for a
-      robotic car.
+      Designed an Arduino-based gesture-controlled car to explore real-time
+      control logic and responsive hardware behavior.
     </p>
-    <p>
-      This project involved interpreting sensor data, implementing real-time
-      control logic, and understanding wireless communication.
-    </p>
-    <div class="tags">
-      <span>Arduino</span>
-      <span>Gesture Control</span>
-      <span>Wireless Systems</span>
-    </div>
   </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section class="section certificates">
+<section id="certificates" class="section fade">
   <h2>Certificates</h2>
 
-  <div class="cert-card">
-    <h3>Embedded Systems Internship</h3>
-    <p>Varisis Advanced Engineering</p>
-    <a href="certificates/internship.pdf" target="_blank">View Certificate →</a>
-  </div>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="certificates/internship.pdf" alt="Internship Certificate">
+      <p>Embedded Systems Internship – Varisis Advanced Engineering</p>
+      <a href="certificates/internship.pdf" target="_blank">View Certificate</a>
+    </div>
 
-  <div class="cert-card">
-    <h3>Database Management Systems</h3>
-    <p>NPTEL</p>
-    <a href="certificates/dbms.pdf" target="_blank">View Certificate →</a>
+    <div class="cert-card">
+      <img src="certificates/workshop.pdf" alt="Workshop Certificate">
+      <p>Women in Engineering Workshop – Padmini VNA Mechatronics</p>
+      <a href="certificates/workshop.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="cert-card">
+      <img src="certificates/dbms.pdf" alt="DBMS Certificate">
+      <p>Database Management Systems – NPTEL</p>
+      <a href="certificates/dbms.pdf" target="_blank">View Certificate</a>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section contact">
+<section id="contact" class="section fade">
   <h2>Contact</h2>
-  <p>📧 nanditagoyal351@gmail.com</p>
-  <p>🔗 linkedin.com/in/nandita-goyal</p>
+  <p>Email: nanditagoyal351@gmail.com</p>
+  <p>LinkedIn: linkedin.com/in/nandita-goyal</p>
 </section>
 
 <footer>
   © 2026 Nandita Goyal
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
